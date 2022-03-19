@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Inertia::share('user', function (){
+        Inertia::share('auth.user', function (){
             return Auth::user();
         });
     }
